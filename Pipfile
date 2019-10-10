@@ -9,6 +9,7 @@ pylint = "*"
 [packages]
 requests = "*"
 twilio = "*"
+schedule = "*"
 
 [requires]
 python_version = "3.7"
