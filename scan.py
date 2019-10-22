@@ -50,6 +50,8 @@ schedule.every().day.at("08:00").do(scanner)
 schedule.every().day.at("12:00").do(scanner)
 schedule.every().day.at("16:00").do(scanner)
 
+# schedule.every().day.at("13:01").do(scanner)
+
 while True:
     schedule.run_pending()
-    time.sleep(3600)
+    time.sleep(60)
