@@ -46,11 +46,11 @@ def scanner():
 
         print(message.sid)
 
+scanner()
 schedule.every().day.at("08:00").do(scanner)
 schedule.every().day.at("12:00").do(scanner)
 schedule.every().day.at("16:00").do(scanner)
 
-# schedule.every().day.at("13:01").do(scanner)
 
 while True:
     schedule.run_pending()
