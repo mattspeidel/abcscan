@@ -5,5 +5,5 @@
 3. Set environment variables in Dockerfile
 4. docker build -t abcscan .
 5. docker run --name abcscan -d abcscan
-(optional)6. Change automated check times
-(optional)7. Change skulist.txt
+6. (optional) Change automated check times
+7. (optional)Change skulist.txt
