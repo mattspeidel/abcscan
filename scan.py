@@ -46,7 +46,18 @@ def scanner():
 
         print(message.sid)
 
+def status_update():
+    message = client.messages \
+                .create(
+                    body='ABCScan is running',
+                    from_=os.getenv('MYTWILNUMBER'),
+                    to=os.getenv('MYPHONENUMBER')
+                )
+    print(message.sid)
+
+
 scanner()
+schedule.every().day.at("00:00").do(status_update)
 schedule.every().day.at("08:00").do(scanner)
 schedule.every().day.at("12:00").do(scanner)
 schedule.every().day.at("16:00").do(scanner)
